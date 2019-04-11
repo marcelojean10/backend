@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 
 const app = express();
+var cors = require('cors');
 
 app.use(cors);
 
