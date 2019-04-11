@@ -1,11 +1,11 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const path = require('path');
+const express = require("express");
+const mongoose = require("mongoose");
+const path = require("path");
+const cors = require("cors");
 
 const app = express();
-var cors = require('cors');
 
-app.use(cors);
+app.use(cors());
 
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
